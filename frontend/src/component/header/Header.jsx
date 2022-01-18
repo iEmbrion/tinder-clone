@@ -13,9 +13,7 @@ const Header = () => {
       <IconButton>
         <PersonIcon fontSize="large" className={styles.header__icon} />
       </IconButton>
-      <IconButton>
-        <PersonIcon fontSize="large" className={styles.header__icon} />
-      </IconButton>
+
       <IconButton>
         <PersonIcon fontSize="large" className={styles.header__icon} />
       </IconButton>
