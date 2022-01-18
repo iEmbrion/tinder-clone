@@ -7,7 +7,12 @@ name: Deploy to Firebase Hosting on merge
     branches:
       - main
     paths:
-      - 'frontend/**'
+      - frontend/**
+
+defaults:
+  run:
+    working-directory: frontend
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
