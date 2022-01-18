@@ -28,3 +28,14 @@ process.on('unhandledRejection', err => {
     process.exit(1);
   });
 });
+
+//Every 24 hours, heroku will shutdown our application by emitting Sigterm event. Handle it to ensure our app shut down properly.
+process.on('SIGTERM', () => {
+  console.log(
+    '(☞ﾟヮﾟ) ☞SIGTERM RECEIVED. Shutting down gracefully... ☜(ﾟヮﾟ☜)'
+  );
+  //Sigterm will do process.exit(1) automactically
+  server.close(() => {
+    `Process terminated!`;
+  });
+});
