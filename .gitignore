@@ -1,3 +1,7 @@
 .prettierrc
 node_modules
 .gitignore
+build
+.firebase
+.firebaserc
+firebase.json

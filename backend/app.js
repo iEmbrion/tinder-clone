@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/users', userRouter);
 
+//Handling invalid paths
 app.all('*', (req, res, next) => {
   next(new AppError('404 not found!', 404));
 });

@@ -13,6 +13,9 @@ const Header = () => {
       <IconButton>
         <PersonIcon fontSize="large" className={styles.header__icon} />
       </IconButton>
+      <IconButton>
+        <PersonIcon fontSize="large" className={styles.header__icon} />
+      </IconButton>
 
       <img className={styles.header__logo} src={tinderLogo} alt="" />
 
